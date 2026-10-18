@@ -1,4 +1,16 @@
-body{color:#30252f;font-family:system-ui,sans-serif}.nav-sara,.footer{background:#4b2545;color:white}.hero{background:linear-gradient(120deg,#fff8f5,#f5dce7)}.hero-img{width:100%;height:360px;object-fit:cover;border-radius:24px}.eyebrow{color:#9a527d;font-size:.75rem;font-weight:800;letter-spacing:2px}.accent{color:#a94f80}.btn-sara{background:#4b2545;color:white}.btn-sara:hover{background:#6c3a62;color:white}.section-title{font-weight:800}.category{background:#fff5f8;border:1px solid #efdce5;border-radius:16px;text-align:center;padding:28px 8px;font-size:1.2rem;font-weight:700}.product-card,.panel{border:1px solid #efdfE8;border-radius:16px;overflow:hidden;height:100%}.product-card img{width:100%;height:210px;object-fit:cover}.product-card .card-body{padding:18px}.price{font-weight:800;color:#4b2545;font-size:1.2rem}.footer{margin-top:40px}.cartrow{display:flex;gap:14px;align-items:center;border-bottom:1px solid #eee;padding:14px 0}.cartrow img{width:75px;height:75px;object-fit:cover;border-radius:10px}
+
+/* ESTILOS GENERALES */
+body {
+    color: #30252f;
+    font-family: system-ui, sans-serif;
+}
+
+/* NAVEGACIÓN Y PIE DE PÁGINA */
+.nav-sara,
+.footer {
+    background-color: #4b2545;
+    color: white;
+}
 
 .nav-sara .container > div {
     display: flex;
@@ -12,4 +24,163 @@ body{color:#30252f;font-family:system-ui,sans-serif}.nav-sara,.footer{background
 
 .nav-sara .nav-link:hover {
     color: #f5c6dc !important;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+/* PORTADA */
+.hero {
+    background: linear-gradient(120deg, #fff8f5, #f5dce7);
+}
+
+.hero-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+/* TEXTOS */
+.eyebrow {
+    color: #9a527d;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.accent {
+    color: #a94f80;
+}
+
+.section-title {
+    font-weight: 800;
+}
+
+/* BOTONES */
+.btn-sara,
+.btn-primary {
+    background-color: #4b2545;
+    border-color: #4b2545;
+    color: white;
+}
+
+.btn-sara:hover,
+.btn-primary:hover {
+    background-color: #71365f;
+    border-color: #71365f;
+    color: white;
+}
+
+/* CATEGORÍAS */
+.category {
+    background-color: #fff5f8;
+    border: 1px solid #efdce5;
+    border-radius: 16px;
+    text-align: center;
+    padding: 28px 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* TARJETAS Y PANELES */
+.product-card,
+.panel {
+    border: 1px solid #efdfE8;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 18px;
+}
+
+.price {
+    font-weight: 800;
+    color: #4b2545;
+    font-size: 1.2rem;
+}
+
+/* TARJETAS RECOMENDADAS */
+.container .card.h-100 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: system-ui, sans-serif;
+}
+
+.container .card.h-100 .card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.container .card.h-100 .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container .card.h-100 .card-title {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: none;
+    min-height: 2.8rem;
+    margin-bottom: 12px;
+}
+
+.container .card.h-100 .card-text {
+    font-size: 0.95rem;
+}
+
+.container .card.h-100 .fw-bold {
+    margin-top: auto;
+    padding-top: 8px;
+}
+
+.container .card.h-100 .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* CARRITO */
+.cartrow {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 14px 0;
+}
+
+.cartrow img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* PANTALLAS PEQUEÑAS */
+@media (max-width: 576px) {
+    .hero-img {
+        height: 240px;
+    }
+
+    .nav-sara .container > div {
+        gap: 10px;
+    }
+
+    .cartrow {
+        flex-wrap: wrap;
+    }
 }
